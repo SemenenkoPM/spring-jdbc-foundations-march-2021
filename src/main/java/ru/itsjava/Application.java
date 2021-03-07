@@ -11,7 +11,9 @@ import java.sql.SQLException;
 public class Application {
     public static void main(String[] args) throws SQLException {
         var context = SpringApplication.run(Application.class);
-        System.out.println("Количество студентов " + context.getBean(StudentService.class).countStudentByFio());
+
+        StudentService studentService = context.getBean(StudentService.class);
+        System.out.println("Количество студентов " + studentService.countStudentByFio("Петров АА"));
 
         Console.main();
     }

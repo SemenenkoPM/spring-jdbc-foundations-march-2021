@@ -1,6 +1,7 @@
 package ru.itsjava.services;
 
 public interface StudentService {
-    int countStudentByFio();
+    int countStudentByFio(String fio);
+//    void insertStudent();
 
 }

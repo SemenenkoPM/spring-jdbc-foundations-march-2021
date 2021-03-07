@@ -9,7 +9,7 @@ import ru.itsjava.dao.StudentsJdbc;
 public class StudentServiceImpl implements StudentService{
     private final StudentsJdbc studentsJdbc;
     @Override
-    public int countStudentByFio() {
-        return studentsJdbc.countStudentByFio("fio");
+    public int countStudentByFio(String fio) {
+        return studentsJdbc.countStudentByFio(fio);
     }
 }
